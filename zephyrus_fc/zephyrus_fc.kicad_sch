@@ -11703,17 +11703,6 @@
 		)
 		(uuid "25c87c91-0a42-46d2-b2d5-c782b41fbe2d")
 	)
-	(label "SPI_MOSI_LSM"
-		(at 304.8 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "25da23c3-71d2-49c6-8628-01f37749aa65")
-	)
 	(label "SWDIO"
 		(at 304.8 101.6 0)
 		(fields_autoplaced yes)
@@ -12011,17 +12000,6 @@
 		)
 		(uuid "3eb90f7a-50cb-458d-b35e-fbc76c028f60")
 	)
-	(label "SPI_CS_LSM"
-		(at 304.8 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3f7325ee-b0c1-44e6-9b53-1972520cb2b8")
-	)
 	(label "PA1"
 		(at 256.54 86.36 180)
 		(fields_autoplaced yes)
@@ -12186,17 +12164,6 @@
 			(justify right bottom)
 		)
 		(uuid "4ba22cca-a114-4785-b93a-38b18efaafd4")
-	)
-	(label "SPI_MISO_LSM"
-		(at 304.8 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4bdb9d79-e4d5-48e7-9b62-dac1c48ef499")
 	)
 	(label "USB+"
 		(at 76.2 255.27 0)
@@ -13407,17 +13374,6 @@
 			(justify left bottom)
 		)
 		(uuid "b91b5743-252f-4a48-93dc-f91e5d201ed5")
-	)
-	(label "SPI_SCK_LSM"
-		(at 304.8 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b9cbe574-3184-4550-a721-566a38f99ffc")
 	)
 	(label "INT1_BMI"
 		(at 518.16 267.97 90)
@@ -16214,6 +16170,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 49.53 293.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "319de975-2842-459e-8990-1b2e7ab31c26")
+		(property "Reference" "#PWR099"
+			(at 53.34 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 45.72 293.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 49.53 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e180804c-b614-4ee4-946f-00f9668e66b2")
+		)
+		(instances
+			(project "zephyrus_fc"
+				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 513.08 102.87 90)
 		(unit 1)
@@ -17069,6 +17092,76 @@
 			(project "SRSFC"
 				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 54.61 297.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4283d9f7-c390-488e-9bf0-fe5a737edeca")
+		(property "Reference" "J14"
+			(at 57.15 297.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "POWER"
+			(at 57.15 299.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 54.61 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 54.61 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a84f3999-e37a-4653-a785-69282668e58b")
+		)
+		(pin "1"
+			(uuid "77a3ef48-26a4-42bc-903c-fe2848a451a6")
+		)
+		(instances
+			(project "zephyrus_fc"
+				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -19296,6 +19389,73 @@
 			(project "SRSFC"
 				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 290.83 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f57a5b7-eedc-4c8a-bfa1-0dd59c27ed6f")
+		(property "Reference" "#PWR098"
+			(at 43.18 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 290.8299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "309fa601-13e1-4936-b14c-859e9db45aec")
+		)
+		(instances
+			(project "zephyrus_fc"
+				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -22573,6 +22733,73 @@
 			(project ""
 				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
 					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 49.53 299.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4177ed8-ad46-4b8d-83f0-916dc37a1d61")
+		(property "Reference" "#PWR097"
+			(at 53.34 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 45.72 299.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 49.53 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24754d78-8725-4cd1-be0c-50152f44ef4f")
+		)
+		(instances
+			(project "zephyrus_fc"
+				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -26317,6 +26544,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 54.61 290.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0b685aa-8142-40bf-b75f-7710aed7b09d")
+		(property "Reference" "J17"
+			(at 57.15 290.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "POWER"
+			(at 57.15 293.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 54.61 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 54.61 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dcdcb4d0-d8a9-4254-a962-6a2b64759e3d")
+		)
+		(pin "1"
+			(uuid "45690840-9e16-48cb-b909-611fe5568852")
+		)
+		(instances
+			(project "zephyrus_fc"
+				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
+					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 187.96 87.63 180)
 		(unit 1)
@@ -26787,6 +27084,73 @@
 			(project "SRSFC"
 				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
 					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 297.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9b089ed-39b1-4985-9e2b-cb2eef68ff26")
+		(property "Reference" "#PWR096"
+			(at 43.18 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 297.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6cba5e7-a5d6-4cca-97ca-7b7edfc7bc5b")
+		)
+		(instances
+			(project "zephyrus_fc"
+				(path "/821ee321-99fb-4317-b1a1-0c3eb2c1909b"
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
